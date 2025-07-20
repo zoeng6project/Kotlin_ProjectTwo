@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProjectTwo_</string>
+    <string name="default_web_client_id">163064767257-a03q3fbfa84abmamf1t8vs3hspbcqcbo.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">1441004353521757</string>
+    <string name="fb_login_protocol_scheme">456b5897eba74fab00eb7e005e5ed077</string>
+    <string name="facebook_client_token">93e8a35cb1ca93f2078e842b0e265682</string>
+
+
+
+</resources>
