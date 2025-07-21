@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,15 +13,20 @@
         android:theme="@style/Theme.ProjectTwo_"
         tools:targetApi="31">
 
-        <!-- Your Main Activity -->
+        <!-- SplashActivity is launcher -->
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- MainActivity launches after splash -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
 
         <!-- Facebook SDK App ID -->
         <meta-data
@@ -40,7 +44,7 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
 
-        <!-- Facebook Custom Tabs (needed for login web dialog) -->
+        <!-- Facebook Custom Tabs -->
         <activity
             android:name="com.facebook.CustomTabActivity"
             android:exported="true">
@@ -48,12 +52,10 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <!-- This MUST match fb + your App ID -->
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
 
     </application>
-
 
 </manifest>
